@@ -12,7 +12,7 @@
 <meta name="description" content="Alpha.canada.ca draft">
 <!--[if gte IE 9 | !IE ]><!-->
 <link href="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/favicon.ico" rel="icon" type="image/x-icon">
-<link rel="stylesheet" href="./GCWeb/css/theme.css">
+<link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css">
 <link rel="stylesheet" href="./GCWeb/css/custom.css">
 
 <!--<![endif]-->
@@ -27,6 +27,21 @@
 
 
 		<![endif]-->
+
+    <style>
+    .bg-primary {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .home h2 {
+      font-size: 1.8em;
+    }
+
+    .experimental .bg-gctheme.well.header-rwd {
+      background-color: #863002;
+    }
+    </style>
 <noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body class="home page-type-nav" vocab="http://schema.org/" typeof="WebPage">
@@ -48,23 +63,20 @@
 </section>
 <div class="row">
 <div class="brand col-xs-5 col-md-4">
-<a href="#"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+<a href="#"><img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/sig-blk-en.svg" alt=""><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a></div></div>
 </header>
-<main property="mainContentOfPage" class="">
-<div class="home-banner">
+<main property="mainContentOfPage">
+
+  <div class="experimental bg-cover" data-bgimg="http://test.canada.ca/alpha-test/GCWeb/css/istockphoto-1058305344-2048x2048.jpg">
+  <div class="container p-0 p-sm-3">
+    <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
+      <h1 property="name" id="wb-cont">alpha.Canada.ca</h1>
+      <p class="mrgn-tp-md">Government of Canada experiments and prototypes</p>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-<div class="innerbox">
-<h1 property="name" id="wb-cont">alpha.Canada.ca</h1>
-<p>Government of Canada experiments and prototypes</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</main>
-
-<main class="container">
-
 <div class="row col-md-8 mrgn-tp-lg">
 <p>As part of the Government of Canada’s <a href="https://www.canada.ca/en/innovation-hub/services/reports-resources/experimentation-direction-deputy-heads.html"> commitment to experimentation</a>, this web domain hosts experimental and prototype websites and services. These websites and services are continually evolving “alpha” products that are still in development and are not ready for full public use.</p>
 
@@ -75,16 +87,7 @@
 <div class="col-md-8 row mrgn-bttm-md">
 <p>The teams hosting these experimental websites and services are interested in your feedback. Please reach out via the contact email addresses below.</p>
 </div>
-<style>
-.bg-primary {
-  background-color: #f0f0f0;
-  color: #333;
-}
 
-.home h2 {
-  font-size: 1.8em;
-}
-</style>
 <table class="table table-bordered mrgn-tp-lg">
   <thead>
   <tr class="bg-primary">
@@ -218,6 +221,7 @@ Canadian Digital Service
 <dd><time property="dateModified">July 25, 2019</time></dd>
 </dl>
 </div>
+</div>
 </main>
 <footer id="wb-info">
 
@@ -228,7 +232,7 @@ Canadian Digital Service
 <h2 class="wb-inv">About this site</h2>
 <ul>
 
-<li><a href="https://www1.canada.ca/en/newsite.html">Contact information</a></li>
+<li><a href="https://www.canada.ca/en/government/about.html">Contact information</a></li>
 <li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
 <li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
 </ul>
@@ -237,7 +241,7 @@ Canadian Digital Service
 <a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
 </div>
 <div class="col-xs-6 col-md-3 col-lg-2 text-right">
-<img src="https://wet-boew.github.io/themes-dist/GCWeb/GCWeb/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+<img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
 </div>
 </div>
 </div>
@@ -245,14 +249,13 @@ Canadian Digital Service
 </footer>
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
-<script src="https://wet-boew.github.io/themes-dist/GCWeb/wet-boew/js/wet-boew.min.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
 <!--<![endif]-->
 <!--[if lt IE 9]>
 		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
 
 		<![endif]-->
-<script src="../GCWeb/js/theme.js"></script>
-<script src="https://gc-proto.github.io/cra-contactus/js/cannedsearch-querystring.js"></script>
+<script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/theme.min.js"></script>
 
 </body>
 </html>
