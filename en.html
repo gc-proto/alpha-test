@@ -15,6 +15,14 @@
 <link rel="stylesheet" href="https://www.canada.ca/etc/designs/canada/wet-boew/css/theme.min.css">
 <link rel="stylesheet" href="./css/custom.css">
 <link rel="stylesheet" href="./css/alpha.css">
+<link rel="stylesheet" href="./css/reponsive-tables.css">
+<link rel="stylesheet" href="./css/jquery.dataTables.css">
+
+<script type="text/javascript" src="./js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+
+
+
 
 <!--<![endif]-->
 <!--[if lt IE 9]>
@@ -95,30 +103,23 @@
 <p>The teams hosting these experimental websites and services are interested in your feedback. Please reach out via the contact email addresses below.</p>
 </div>
 
-<table class="table table-bordered mrgn-tp-lg">
-  <thead>
-  <tr class="bg-primary">
-      <th scope="col">Service name</th>
-			<th scope="col">Lead department or team</th>
-      <th scope="col">Feedback email address</th>
-	</tr>
+<table id="myTable1">
+          <thead>
+            <tr class="d2">
+              <th scope="col">Service name</th>
+              <th scope="col">Lead department or team</th>
+              <th scope="col">Feedback email address</th>
+            </tr>
+          </thead>
 
-    <tr>
-      <td>Government of Canada notification service
-[notification.alpha.canada.ca]
-</td>
-      <td>
-Canadian Digital Service
-</td>
-      <td>
-<a href="mailto:">cds-snc@tbs-sct.gc.ca</a>
-</td>
-		</tr>
-    <td>etc</td>
-    <td></td>
-    <td></td>
-
-  </thead>
+          <tbody>
+            <tr valign="top" class="d2">
+              <td data-label="Service name" class="right-mobile"><div class="clearfix"></div>Government of Canada notification service
+        [notification.alpha.canada.ca]</td>
+              <td class="" data-label="Lead department or team"><div class="clearfix"></div>Canadian Digital Service</td>
+              <td data-label="Feedback email address"><a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
+            </tr>
+          </tbody>
 </table>
 
 <div class="col-md-8 row">
