@@ -111,6 +111,8 @@
 
 #lang {
  right: 1.3em !important;
+ top: 1em !important;
+
 }
 
 #sm-lang {
@@ -150,6 +152,8 @@ body.transactional div#wb-bnr div.brand {
 #sm-lang {
  right: .25em;
  visibility: visible;
+ top: 1.2em !important;
+
 
 }
 
