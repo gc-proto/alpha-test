@@ -176,9 +176,13 @@ body.transactional div#wb-bnr div.brand {
  visibility: hidden;
 }
 
+header .brand a {
+  width: 80% !important;
+}
+
 #sm-lang {
  right: 0em;
- top: 3.8em !important;
+ top: 1.2em !important;
 }
 
 #wb-srch-sub {
