@@ -11,7 +11,7 @@
   background-color: #591b01;
 }
 
-/* slim header  (only works for mobile )*/
+/* slim header */
 #wb-bnr {
   position: relative !important;
 }
@@ -125,11 +125,6 @@ body.transactional div#wb-bnr div.brand {
 		position: static;
 }
 
-#brand-container-mya {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-}
-
 
 }
 
@@ -156,12 +151,6 @@ body.transactional div#wb-bnr div.brand {
 
 
 }
-
-#brand-container-mya {
-	margin-left: 0 !important;
-	margin-right: 0 !important;
-}
-
 
 }
 
