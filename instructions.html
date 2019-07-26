@@ -39,7 +39,7 @@
 
 <noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 </head>
-<body class="home page-type-nav" vocab="http://schema.org/" typeof="WebPage">
+<body class="page-type-nav" vocab="http://schema.org/" typeof="WebPage">
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Skip to main content</a>
@@ -80,81 +80,62 @@
 
 
 </header>
-<main property="mainContentOfPage">
+<main property="mainContentOfPage" class="container">
 
-  <div class="experimental bg-cover" data-bgimg="http://test.canada.ca/alpha-test/images/istockphoto-1059102072-1024x1024.jpg">
-  <div class="container p-0 p-sm-3">
-    <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-      <h1 property="name" id="wb-cont">alpha.Canada.ca</h1>
-      <p class="mrgn-tp-md">Government of Canada experiments and prototypes</p>
-    </div>
-  </div>
-</div>
+<h1 property="name" id="wb-cont">Instructions and requirements for
+alpha.canada.ca subdomains</h1>
 
-<div class="container">
 <div class="row col-md-8 mrgn-tp-lg">
-<p>As part of the Government of Canada’s <a href="https://www.canada.ca/en/innovation-hub/services/reports-resources/experimentation-direction-deputy-heads.html"> commitment to experimentation</a>, this web domain hosts experimental and prototype websites and services. These websites and services are continually evolving “alpha” products that are still in development and are not ready for full public use.</p>
+<p>Government of Canada departments and agencies can use alpha.canada.ca subdomains to deploy and test experimental web applications and services. This domain is meant for continually evolving “alpha” prototype products that are still in development and are not ready for full public use.</p>
 
-<p>This domain collects ongoing experiments in one place, to make it easier for the government to collaborate and share its experiments. They are publicly available in the spirit of <a href="https://www.canada.ca/en/government/system/digital-government/government-canada-digital-standards.html">working in the open</a>.</p>
+<p>For more mature products that are still under large-scale active development, <a href="#">teams can use the beta.canada.ca subdomain</a>.</p>
 </div>
+
 <div class="clearfix"></div>
-<h2>Alpha websites and services</h2>
+<h2>Subdomain naming conventions</h2>
 <div class="col-md-8 row mrgn-bttm-md">
-<p>The teams hosting these experimental websites and services are interested in your feedback. Please reach out via the contact email addresses below.</p>
+<p>Web applications and services on alpha.canada.ca use the following naming convention, aligned with the <a href="https://www.tbs-sct.gc.ca/pol/doc-eng.aspx?id=24227">Standard on Web Usability</a> (Appendix B):</p>
+<div class="well">
+servicename . unilingual departmental acronym . alpha.canada.ca
 </div>
+<p>
+For simplicity, each service has a separate subdomain name in each language (to avoid longer hyphenated bilingual URLs). In cases where departmental acronyms are bilingual, or where the service name is bilingual, the same web addresses can be used for both languages.
+</p>
 
-<table>
-          <thead>
-            <tr class="bg-primary">
-              <th scope="col">Service name</th>
-              <th scope="col">Lead department or team</th>
-              <th scope="col">Feedback email address</th>
-            </tr>
-          </thead>
+<p>Departmental acronyms are used as the “top-level” subdomain, in front of alpha.canada.ca, to avoid naming conflicts with individual services. Only the official acronyms established under the Federal Identity Program will be used to represent departments and agencies.</p>
 
-          <tbody>
-            <tr valign="top" class="d2">
-              <td data-label="Service name" class="left-mobile"><div class="clearfix"></div>Government of Canada notification service
-        [notification.alpha.canada.ca]</td>
-              <td class="left-mobile" data-label="Lead department or team"><div class="clearfix"></div>Canadian Digital Service</td>
-              <td class="left-mobile" data-label="Feedback email address"><div class="clearfix"></div><a href="mailto:cds-snc@tbs-sct.gc.ca">cds-snc@tbs-sct.gc.ca</a></td>
-            </tr>
-          </tbody>
-</table>
+<p>For Government of Canada-wide applications and services, teams can request a unique top-level subdomain instead of using a departmental acronym. (For example, service-name.alpha.canada.ca.) These requests must be approved by both the <a href="https://www.canada.ca/en/government/about/about-digital-transformation-office.html">Digital Transformation Office</a> and the <a href="https://digital.canada.ca/">Canadian Digital Service</a>.</p>
 
-<div class="col-md-8 row">
-<h2>Get an alpha.canada.ca subdomain</h2>
-
-<p>If you’re a Government of Canada team interested in hosting a prototype on alpha.canada.ca, here’s what to do:</p>
-
-<ol>
-  <li><a href="#">Review the instructions and requirements</a> </li>
-  <li><a href="mailto:dto.btn@tbs-sct.gc.ca">Contact us</a></li>
-</ol>
+<p>To request a unique top-level alpha.canada.ca subdomain, start by contacting the <a href="mailto:dto.btn@tbs-sct.gc.ca">Digital Transformation Office at TBS</a>.</p>
 
 
-<p>This domain name is managed by the TBS <a href="https://www.canada.ca/en/government/about/about-digital-transformation-office.html">Digital Transformation Office</a> and the <a href="https://digital.canada.ca/">Canadian Digital Service</a>. For technical information, visit the <a href="https://github.com/cds-snc/dns">DNS repository</a> on GitHub.</p>
+<h2>Deployment requirements</h2>
 
-
-<h2>What is an “alpha” phase?
-</h2>
-<p>The "alpha" phase involves:</p>
+<p>This subdomain is meant for experimental and prototype web applications and services that are under active development by product teams. To be deployed on alpha.canada.ca, a web application or service needs to meet the following criteria:</p>
   <ul>
-    <li>building and iterating prototypes of a service</li>
-    <li>testing prototypes with users</li>
-    <li>validating the feasibility of a solution</li>
+    <li>hosted on public cloud infrastructure</li>
+    <li>open source on a publicly-visible repository</li>
+    <li>automatically deployable via git operations</li>
+    <li>use HTTPS</li>
+    <li>actively developed within the past four months</li>
   </ul>
 
-<p>Building prototypes in the alpha phase allows service improvement teams to:</p>
+<p>In addition, the web application or service must include the following elements:</p>
 <ul>
-  <li>find the and fix problems with the design of a service</li>
-  <li>gather data to help inform future design choices </li>
-  <li>develop more detailed cost estimates</li>
-  <li>identify the potential risks for proceeding to <a href="https://digital.canada.ca/2018/11/29/from-build-first-to-users-first/">"beta" phase</a>, as early as possible</li>
-  <li>determine if the solution should proceed to the "beta" phase</li>
+  <li>an “alpha” banner to indicate to users that it is a prototype service</li>
+  <li>a feedback or issue-reporting method (either email address, web form, or public issue tracker)</li>
+  <li>a “nofollow” meta tag or robots.txt file to prevent indexing by search engines</li>
 </ul>
 
+<p>Web applications and services hosted on alpha.canada.ca are subject to automated security and compliance auditing. <b>Applications and services that no longer meet the criteria above, or that have unresolved security vulnerabilities, will be automatically removed from the domain name listing system.</b> Product teams will be notified by email at least ten days in advance of an automated removal.</p>
+
+<h2>Deployment process</h2>
+
+<p>To add your web application or service to alpha.canada.ca, make a pull request to the <a href="https://github.com/cds-snc/dns">DNS repository</a>. Once approved, these DNS changes are propagated automatically and should be visible within 24 hours.</p>
+
+<p>For technical support or questions, email the Canadian Digital Service <a href="mailto:CDSPlatform.PlateformesSNC@tbs-sct.gc.ca">Platform team</a>.</p>
 </div>
+
 <div class="clearfix"></div>
 
 <div class="pagedetails">
@@ -229,7 +210,7 @@
 <dd><time property="dateModified">July 25, 2019</time></dd>
 </dl>
 </div>
-</div>
+
 </main>
 <footer id="wb-info">
 
