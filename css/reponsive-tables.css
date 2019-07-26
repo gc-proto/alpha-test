@@ -108,8 +108,9 @@ table th {
     border-bottom: 0;
   }
 
-  .right-mobile {
+  .left-mobile {
           text-align: left !important;
+          float:
 
       }
 }
