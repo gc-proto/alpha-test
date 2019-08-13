@@ -35,48 +35,57 @@
 <!--[if lte IE 9]>
 
 
-		<![endif]--><!-- Meta data -->
-    <!-- Meta data-->
-    <!-- Load closure template scripts -->
-    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/soyutils.js"></script>
-    <script type="text/javascript" src="https://www.canada.ca/etc/designs/canada/cdts/gcweb/v4_0_30/cdts/compiled/wet-en.js"></script>
-    <link rel="stylesheet" href="../css/blog-dto-btn.css">
+		<![endif]-->
+
+<noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
+</head>
+<body class="home page-type-nav" vocab="http://schema.org/" typeof="WebPage">
+<ul id="wb-tphp">
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+</li>
+<li class="wb-slc">
+<a class="wb-sl" href="#wb-info">Skip to "About government"</a>
+</li>
+</ul>
+<header>
+
+  <div id="wb-bnr" class="container">
+
+  <div id="lang" class="col-lg-12 col-xs-2">
+  <section id="wb-lng" class="text-right">
+  <h2 class="wb-inv">Language selection</h2>
+  <ul class="list-inline margin-bottom-none">
+  <li><a lang="fr" href="home-fr.html">Français</a></li>
+
+  </ul>
+  </section>
+  </div>
+
+  <div id="sm-lang" class="col-lg-12 col-xs-2">
+  <section id="wb-lng" class="text-right">
+  <h2 class="wb-inv">Language selection</h2>
+  <ul class="list-inline margin-bottom-none">
+  <li><a lang="fr" href="home-fr.html">FR</a></li>
+  </ul>
+  </section>
+  </div>
+
+  <div class="col-xs-6 col-sm-6 col-lg-4 col-md-4 brand">
+  <a href="https://www.canada.ca/en.html"><img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="" property="logo"><span class="wb-inv"> Government of Canada / <span lang="fr">Gouvernement du Canada</span></span></a>
+  </div>
+
+  </div>
+  </div>
 
 
-    <!-- Write closure template -->
-    <script type="text/javascript">
-      document.write(wet.builder.refTop({
-      }));
-    </script>
-    </head>
-    <body vocab="http://schema.org/" typeof="WebPage">
-    <div id="def-top">
-    </div>
-    <!-- Write closure template -->
-    <script type="text/javascript">
-      var defTop = document.getElementById("def-top");
-      defTop.outerHTML = wet.builder.top({
-        lngLinks: [{
-          lang: "fr",
-          href: "#",
-          text: "Français"
-        }],
-        breadcrumbs: [{
-          title: "Home",
-          href: "https://www.canada.ca/en.html"
-        }],
-        search: true,
-        siteMenu: true,
-        showPreContent: true
-      });
-    </script>
 </header>
 <main property="mainContentOfPage">
 
   <div class="experimental bg-cover" data-bgimg="http://test.canada.ca/alpha-test/images/istockphoto-1059102072-1024x1024.jpg">
   <div class="container p-0 p-sm-3">
     <div class="well header-rwd brdr-0 brdr-rds-0 text-white bg-gctheme">
-      <h1 property="name" id="wb-cont" class="homeborder">alpha.Canada.ca</h1>
+      <h1 property="name" id="wb-cont">alpha.Canada.ca</h1>
       <p class="mrgn-tp-md">Government of Canada experiments and prototypes</p>
     </div>
   </div>
@@ -148,36 +157,105 @@
 </div>
 <div class="clearfix"></div>
 
-<div id="def-preFooter">
+<div class="pagedetails">
+<div class="row">
+<div class="col-sm-6 col-md-5 col-lg-4">
+<details class="brdr-0">
+<summary class="btn btn-default text-center">Report a problem on this page</summary>
+<div class="well row">
+<div class="gc-rprt-prblm">
+<div class="gc-rprt-prblm-frm gc-rprt-prblm-tggl">
+<form action="#">
+<fieldset>
+<legend><span class="field-name">Please select all that apply: </span></legend>
+<div class="checkbox">
+<label for="problem1"><input type="checkbox" data-reveal="#broken" name="problem" value="Something is broken" id="problem1">Something is broken</label>
 </div>
-<!-- Write closure template -->
-<script type="text/javascript">
-	var defPreFooter = document.getElementById("def-preFooter");
-	defPreFooter.outerHTML = wet.builder.preFooter({
-		dateModified: "August 1, 2019",
-		showPostContent: true,
-		showFeedback: true,
-		showShare: true
-	});
-</script>
-		</main>
-		<div id="def-footer">
+<div class="form-group hide" id="broken">
+<label for="problem1-detail">Provide more details (optional):</label>
+<input type="text" class="form-control full-width" id="problem1-detail">
+</div>
+<div class="checkbox">
+<label for="problem2"><input type="checkbox" data-reveal="#spelling" name="problem" value="It has spelling or grammar mistakes" id="problem2">The page has spelling or grammar mistakes</label>
+</div>
+<div class="form-group hide" id="spelling">
+<label for="problem2-detail">Provide more details (optional):</label>
+<input type="text" class="form-control full-width" id="problem2-detail">
+</div>
+<div class="checkbox">
+<label for="problem3"><input type="checkbox" data-reveal="#wrong" name="problem" value="The information is wrong" id="problem3">The information is wrong</label>
+</div>
+<div class="form-group hide" id="wrong">
+<label for="problem3-detail">Provide more details (optional):</label>
+<input type="text" class="form-control full-width" id="problem3-detail">
+</div>
+<div class="checkbox">
+<label for="problem4"><input type="checkbox" data-reveal="#outdated" name="problem" value="The information is outdated" id="problem4">The information is outdated</label>
+</div>
+<div class="form-group hide" id="outdated">
+<label for="problem4-detail">Provide more details (optional):</label>
+<input type="text" class="form-control full-width" id="problem4-detail">
+</div>
+<div class="checkbox">
+<label for="problem5"><input type="checkbox" data-reveal="#find" name="problem" value="I can’t find what I’m looking for" id="problem5">I can’t find what I’m looking for</label>
+</div>
+<div class="form-group hide" id="find">
+<label for="problem5-detail">Describe what you’re looking for (optional):</label>
+<input type="text" class="form-control full-width" id="problem5-detail">
+</div>
+<div class="checkbox">
+<label for="problem6"><input type="checkbox" data-reveal="#confusing" name="problem" value="It’s confusing" id="problem6">Other</label>
+</div>
+<div class="form-group hide" id="confusing">
+<label for="problem6-detail">Provide more details (optional):</label>
+<input type="text" class="form-control full-width" id="problem6-detail">
+</div>
+</fieldset>
+<button type="submit" class="btn btn-primary wb-toggle" data-toggle='{"stateOff": "hide", "stateOn": "show", "selector": ".gc-rprt-prblm-tggl"}'>Submit</button>
+</form>
+</div>
+<div class="gc-rprt-prblm-thnk gc-rprt-prblm-tggl hide">
+<h3>Thank you for your help!</h3>
+<p>You will not receive a reply. For enquiries, please <a href="contact.html">contact us</a>.</p>
+</div>
+</div>
+</div>
+</details>
+</div>
+<div class="wb-share col-sm-4 col-md-3 col-sm-offset-2 col-md-offset-4 col-lg-offset-5" data-wb-share='{"lnkClass": "btn btn-default btn-block"}'></div>
+</div>
+<dl id="wb-dtmd">
+<dt>Date modified:&#32;</dt>
+<dd><time property="dateModified">July 25, 2019</time></dd>
+</dl>
+</div>
+</div>
+</main>
+<footer id="wb-info">
 
-		</div>
-		<!-- Write closure template -->
-		<script type="text/javascript">
-			var defFooter = document.getElementById("def-footer");
-			defFooter.outerHTML = wet.builder.footer({
-				showFooter: true,
-				showFeatures: true
-			});
-		</script>
-		<!-- Write closure template -->
-		<script type="text/javascript">
-			document.write(wet.builder.refFooter({
-			}));
-		</script>
+<div class="brand">
+<div class="container">
+<div class="row">
+<nav class="col-md-9 col-lg-10 ftr-urlt-lnk">
+<h2 class="wb-inv">About this site</h2>
+<ul>
 
+<li><a href="https://www.canada.ca/en.html">Return to Canada.ca</a></li>
+<li><a href="https://www.canada.ca/en/government/about.html">Contact information</a></li>
+<li><a href="https://www.canada.ca/en/transparency/terms.html">Terms and conditions</a></li>
+<li><a href="https://www.canada.ca/en/transparency/privacy.html">Privacy</a></li>
+</ul>
+</nav>
+<div class="col-xs-6 visible-sm visible-xs tofpg">
+<a href="#wb-cont">Top of Page <span class="glyphicon glyphicon-chevron-up"></span></a>
+</div>
+<div class="col-xs-6 col-md-3 col-lg-2 text-right">
+<img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/wmms-blk.svg" alt="Symbol of the Government of Canada">
+</div>
+</div>
+</div>
+</div>
+</footer>
 <!--[if gte IE 9 | !IE ]><!-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 <script src="https://www.canada.ca/etc/designs/canada/wet-boew/js/wet-boew.min.js"></script>
